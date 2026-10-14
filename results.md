@@ -38,3 +38,13 @@ Fixed-size and structure-aware chunking retrieved useful information, while impr
 ## Conclusion
 
 The project successfully demonstrates PDF extraction, heuristic parsing, multiple chunking strategies, and keyword-based retrieval comparison. Further work can include improved evaluation, semantic embeddings, vector search, and answer generation with an LLM.
+
+## Chunking Method Comparison
+
+| Chunking Method | Number of Chunks | Difference from Fixed-Size |
+|---|---:|---|
+| Fixed-size chunking | 40 | Baseline |
+| Structure-aware chunking | 36 | 10% fewer |
+| Improved page-aware chunking | 28 | 30% fewer |
+
+**Observation:** Improved page-aware chunking generated 30% fewer chunks than fixed-size chunking. However, fewer chunks alone do not guarantee better retrieval quality.
